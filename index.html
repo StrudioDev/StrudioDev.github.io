@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">DaniDev</div>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact" class="btn-primary">Let's Talk</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Building the next generation of <span class="gradient-text">Roblox games</span>.</h1>
+                <p class="subtitle">Crafting immersive experiences with robust, scalable code.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#process" class="btn-secondary">See my process</a>
+                </div>
+                <div class="tech-stack">
+                    <span>Tech Stack &rarr;</span>
+                    <i class="fa-solid fa-code"></i> Luau
+                    <i class="fa-solid fa-cubes"></i> Rojo
+                    <i class="fa-brands fa-github"></i> GitHub
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-glow"></div>
+    </header>
+
+    <section class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-content">
+                <h3>Anime Fishing Odyssey</h3>
+                <p>Immersive fishing RPG with anime aesthetics.</p>
+            </div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <div class="stat-content">
+                <h3>0M+</h3>
+                <p>Total Plays Contributed <span class="growth">(+0% MoM)</span></p>
+            </div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <div class="stat-content">
+                <h3>Commissions Open</h3>
+                <a href="#contact" class="link-text">Book a consultation &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper: Sidebar + Projects -->
+    <div class="main-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="profile-header">
+                    <h2>About Me</h2>
+                </div>
+                <p class="bio">
+                    I am a full-stack Roblox developer specializing in high-performance game systems, immersive UI, and
+                    scalable backend architecture.
+                    <br><br>
+                    With years of experience on the platform, I help studios and creators bring their ambitious visions
+                    to life.
+                </p>
+
+                <div class="sidebar-section">
+                    <h3>Focus</h3>
+                    <div class="tags-cloud">
+                        <span class="tag">Systems Architecture</span>
+                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">Data Stores</span>
+                        <span class="tag">Combat Systems</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Socials</h3>
+                    <div class="sidebar-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="content-area">
+            <section id="projects" class="projects-section">
+                <!-- Section Header removed from here as it's less prominent in the side-by-side layout, or we can keep it inside -->
+                <div class="section-header-compact">
+                    <h2>Featured Projects</h2>
+                </div>
+
+                <div class="projects-list">
+                    <!-- Project 1 -->
+                    <div class="project-card large">
+                        <div class="card-image"
+                            style="background-image: url('https://placehold.co/800x450/1a1a1a/FFF?text=Anime+Fishing');">
+                        </div>
+                        <div class="card-content">
+                            <div class="tags">
+                                <span class="tag">Open World</span>
+                                <span class="tag">RPG</span>
+                            </div>
+                            <h3>Anime Fishing Odyssey</h3>
+                            <p>An immersive fishing RPG combining anime aesthetics with complex progression systems.
+                                Features custom water physics, dynamic eco-systems, and a massive persistent open world.
+                            </p>
+                            <a href="#" class="btn-small">View Game <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card large">
+                        <div class="card-image"
+                            style="background-image: url('https://placehold.co/800x450/1a1a1a/FFF?text=Ice+Cream+Tycoon');">
+                        </div>
+                        <div class="card-content">
+                            <div class="tags">
+                                <span class="tag">Tycoon</span>
+                                <span class="tag">Merge System</span>
+                            </div>
+                            <h3>Ice Cream Tower Tycoon</h3>
+                            <p>Scalable tycoon architecture with a unique merge mechanic system. Optimized for high
+                                player counts and massive structure rendering.</p>
+                            <a href="https://www.roblox.com/games/14307704852/NEW-Ice-Cream-Merge-Tower-Tycoon"
+                                target="_blank" class="btn-small">View Game <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card large">
+                        <div class="card-image"
+                            style="background-image: url('https://placehold.co/800x450/1a1a1a/FFF?text=Perris+CA');">
+                        </div>
+                        <div class="card-content">
+                            <div class="tags">
+                                <span class="tag">City Sim</span>
+                                <span class="tag">Roleplay</span>
+                            </div>
+                            <h3>Perris California</h3>
+                            <p>Realistic city simulation and roleplay environment with complex vehicle systems, economy
+                                integration, and property ownership.</p>
+                            <a href="https://www.roblox.com/games/13905922711/Perris-California" target="_blank"
+                                class="btn-small">View Game <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 grid (2 columns for smaller items) -->
+                    <div class="projects-subgrid">
+                        <div class="project-card">
+                            <div class="card-image"
+                                style="background-image: url('https://placehold.co/600x340/1a1a1a/FFF?text=Pop+It');">
+                            </div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag">Trading</span></div>
+                                <h3>Pop it! Trading</h3>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-image"
+                                style="background-image: url('https://placehold.co/600x340/1a1a1a/FFF?text=Stairs+of+Rage');">
+                            </div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag">RNG</span></div>
+                                <h3>Stairs of Rage!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Pricing & Packages</h2>
+                <p>Choose the right plan for your project needs.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Pricing tiers updated to concise look -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p>Perfect for quick bug fixes</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Basic bug fixing</li>
+                        <li>Code review</li>
+                        <li>1 revision</li>
+                    </ul>
+                    <a href="#contact" class="btn-pricing">Get Started</a>
+                </div>
+
+                <div class="pricing-card popular">
+                    <!-- <div class="popular-tag">Most Popular</div> -->
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <p>New features & enhancements</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Bug fixes + features</li>
+                        <li>Advanced optimization</li>
+                        <li>3 revisions</li>
+                    </ul>
+                    <a href="#contact" class="btn-pricing primary">Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <p>Full system development</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Full system dev</li>
+                        <li>Industry-standard code</li>
+                        <li>Unlimited revisions</li>
+                    </ul>
+                    <a href="#contact" class="btn-pricing">Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Full Game</h3>
+                        <p>Concept to Launch</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Game design</li>
+                        <li>Architecture</li>
+                        <li>Monetization</li>
+                    </ul>
+                    <a href="#contact" class="btn-pricing">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section class="video-showcase">
+        <div class="section-header">
+            <h2>Video Showcase</h2>
+        </div>
+        <div class="video-container">
+            <!-- Placeholder for YouTube Embed -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-box">
+            <h2>Let's Work Together</h2>
+            <p>Ready to bring your Roblox game vision to life?</p>
+            <a href="mailto:daniyalahmed5515@gmail.com" class="btn-primary large">Book a Consultation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 DaniDev.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
