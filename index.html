@@ -23,7 +23,7 @@
         </div>
         <div class="nav-links">
             <a href="#projects">Projects</a>
-            <a href="#pricing">Pricing</a>
+
             <a href="#contact" class="btn-primary">Let's Talk</a>
         </div>
     </nav>
@@ -67,7 +67,7 @@
                     I am a full-stack Roblox developer specializing in high-performance game systems, immersive UI, and
                     scalable backend architecture.
                     <br><br>
-                    With years of experience on the platform, I help studios and creators bring their ambitious visions
+                    With years of experience on the platform, I help creators bring their visions
                     to life.
                 </p>
 
@@ -85,8 +85,9 @@
                     <h3>Socials</h3>
                     <div class="sidebar-socials">
                         <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.roblox.com/users/YOUR_USER_ID/profile" target="_blank" title="Roblox"><i
+                                class="fa-solid fa-gamepad"></i></a>
+                        <a href="#contact"><i class="fa-brands fa-discord"></i></a>
                     </div>
                 </div>
             </div>
@@ -123,7 +124,6 @@
                         <div class="card-content">
                             <div class="tags">
                                 <span class="tag">Physics</span>
-                                <span class="tag">Animation</span>
                             </div>
                             <h3>Ragdoll System</h3>
                             <p>Advanced ragdoll physics system with smooth transitions, customizable joint constraints,
@@ -152,102 +152,22 @@
         </div>
     </div>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing-section">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>Pricing & Packages</h2>
-                <p>Choose the right plan for your project needs.</p>
-            </div>
-
-            <div class="pricing-grid">
-                <!-- Pricing tiers updated to concise look -->
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Starter</h3>
-                        <p>Perfect for quick bug fixes</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Basic bug fixing</li>
-                        <li>Code review</li>
-                        <li>1 revision</li>
-                    </ul>
-                    <a href="#contact" class="btn-pricing">Get Started</a>
-                </div>
-
-                <div class="pricing-card popular">
-                    <!-- <div class="popular-tag">Most Popular</div> -->
-                    <div class="pricing-header">
-                        <h3>Pro</h3>
-                        <p>New features & enhancements</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Bug fixes + features</li>
-                        <li>Advanced optimization</li>
-                        <li>3 revisions</li>
-                    </ul>
-                    <a href="#contact" class="btn-pricing primary">Get Started</a>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Premium</h3>
-                        <p>Full system development</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Full system dev</li>
-                        <li>Industry-standard code</li>
-                        <li>Unlimited revisions</li>
-                    </ul>
-                    <a href="#contact" class="btn-pricing">Get Started</a>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Full Game</h3>
-                        <p>Concept to Launch</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Game design</li>
-                        <li>Architecture</li>
-                        <li>Monetization</li>
-                    </ul>
-                    <a href="#contact" class="btn-pricing">Get Started</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Showcase Section -->
-    <section class="video-showcase">
-        <div class="section-header">
-            <h2>Video Showcase</h2>
-        </div>
-        <div class="video-container">
-            <!-- Placeholder for YouTube Embed -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
-    </section>
-
     <section id="contact" class="contact-section">
         <div class="contact-box">
             <h2>Let's Work Together</h2>
             <p>Ready to bring your Roblox game vision to life?</p>
-            <a href="mailto:daniyalahmed5515@gmail.com" class="btn-primary large">Book a Consultation</a>
+            <div class="discord-container">
+                <input type="text" value="Qwip70" id="discordUsername" readonly class="discord-input">
+                <button onclick="copyDiscord()" class="copy-btn">
+                    <i class="fa-solid fa-copy"></i> Copy
+                </button>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 Kareem.</p>
-            <div class="socials">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
         </div>
     </footer>
 

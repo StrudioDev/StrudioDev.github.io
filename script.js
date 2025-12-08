@@ -87,4 +87,28 @@ if (logo && logoLetters.length > 0) {
     });
 }
 
+// Copy Discord username to clipboard
+function copyDiscord() {
+    const discordInput = document.getElementById('discordUsername');
+    const copyBtn = document.querySelector('.copy-btn');
+
+    // Select and copy the text
+    discordInput.select();
+    discordInput.setSelectionRange(0, 99999); // For mobile devices
+
+    navigator.clipboard.writeText(discordInput.value).then(() => {
+        // Change button text temporarily
+        const originalHTML = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+        copyBtn.style.background = '#22c55e';
+
+        setTimeout(() => {
+            copyBtn.innerHTML = originalHTML;
+            copyBtn.style.background = 'white';
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+    });
+}
+
 console.log("Kareem Portfolio Loaded");
