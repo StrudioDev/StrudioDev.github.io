@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Chaos16';
+    src: url('LLO_r.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --bg-color: #050505;
     --card-bg: #111111;
@@ -27,6 +34,54 @@ html {
     scroll-behavior: smooth;
 }
 
+@keyframes breathe {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes letterFloat {
+    0% {
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-8px) translateX(3px) rotate(2deg);
+    }
+
+    50% {
+        transform: translateY(-3px) translateX(-2px) rotate(-1deg);
+    }
+
+    75% {
+        transform: translateY(5px) translateX(2px) rotate(1deg);
+    }
+
+    100% {
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+    }
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -43,6 +98,7 @@ html {
 }
 
 .logo {
+    font-family: 'Chaos16', sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: -0.05em;
@@ -50,6 +106,14 @@ html {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.logo span {
+    display: inline-block;
+    animation: letterFloat 5s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.2s);
+    transition: transform 0.2s ease-out;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -68,6 +132,10 @@ html {
 
 .nav-links a:hover {
     color: white;
+}
+
+.nav-links .btn-primary {
+    color: black !important;
 }
 
 .btn-primary {
@@ -143,10 +211,38 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     color: var(--secondary-text);
     font-size: 0.9rem;
     font-weight: 500;
+    flex-wrap: wrap;
+}
+
+.tech-label {
+    margin-right: 0.5rem;
+    opacity: 0.7;
+}
+
+.tech-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.tech-item i {
+    font-size: 1rem;
+    color: var(--primary-text);
 }
 
 .hero-bg-glow {
@@ -159,6 +255,7 @@ html {
     background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(5, 5, 5, 0) 70%);
     z-index: -1;
     pointer-events: none;
+    animation: breathe 8s infinite ease-in-out;
 }
 
 /* Stats Bar */
@@ -208,7 +305,7 @@ html {
 
 /* Main Wrapper (Sidebar + Content) */
 .main-wrapper {
-    max-width: 1300px;
+    max-width: 1200px;
     /* Wider to accommodate both columns */
     margin: 4rem auto;
     padding: 0 2rem;
@@ -290,21 +387,45 @@ html {
 .project-card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 1rem;
+    border-radius: 2rem;
     overflow: hidden;
     transition: transform 0.3s, border-color 0.3s;
 }
 
 .project-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-8px);
     border-color: #333;
+    animation: none;
+    /* stop float on hover */
+}
+
+.project-card {
+    /* ... existing props ... */
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 0s;
+    /* will randomize below if JS used, but CSS var is easier */
 }
 
 .project-card.large .card-image {
-    height: 400px;
-    width: 100%;
+    width: 110%;
+    margin-left: -5%;
+    height: 550px;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    border-radius: 1.5rem 1.5rem 0 0;
+    position: relative;
+}
+
+.project-card.large .card-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, var(--card-bg));
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 
 .project-card .card-content {
@@ -350,7 +471,7 @@ html {
 
 /* Pricing */
 .pricing-section {
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
     background: #080808;
 }
 
@@ -432,7 +553,7 @@ html {
 
 /* Video Showcase */
 .video-showcase {
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;

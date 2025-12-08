@@ -17,7 +17,10 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">DaniDev</div>
+        <div class="logo">
+            <span style="--i:0">K</span><span style="--i:1">a</span><span style="--i:2">r</span><span
+                style="--i:3">e</span><span style="--i:4">e</span><span style="--i:5">m</span>
+        </div>
         <div class="nav-links">
             <a href="#projects">Projects</a>
             <a href="#pricing">Pricing</a>
@@ -28,17 +31,16 @@
     <header class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Building the next generation of <span class="gradient-text">Roblox games</span>.</h1>
-                <p class="subtitle">Crafting immersive experiences with robust, scalable code.</p>
+                <h1>Building the next generation of <br><span class="gradient-text">Roblox games</span>.</h1>
+                <p class="subtitle">Scripting with robust, scalable code.</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn-primary">View Projects</a>
-                    <a href="#process" class="btn-secondary">See my process</a>
                 </div>
                 <div class="tech-stack">
-                    <span>Tech Stack &rarr;</span>
-                    <i class="fa-solid fa-code"></i> Luau
-                    <i class="fa-solid fa-cubes"></i> Rojo
-                    <i class="fa-brands fa-github"></i> GitHub
+
+                    <span class="tech-item"><i class="fa-solid fa-code"></i> Luau</span>
+                    <span class="tech-item"><i class="fa-solid fa-cubes"></i> Rojo</span>
+                    <span class="tech-item"><i class="fa-brands fa-github"></i> GitHub</span>
                 </div>
             </div>
         </div>
@@ -46,20 +48,6 @@
     </header>
 
     <section class="stats-bar">
-        <div class="stat-item">
-            <div class="stat-content">
-                <h3>Anime Fishing Odyssey</h3>
-                <p>Immersive fishing RPG with anime aesthetics.</p>
-            </div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-            <div class="stat-content">
-                <h3>0M+</h3>
-                <p>Total Plays Contributed <span class="growth">(+0% MoM)</span></p>
-            </div>
-        </div>
-        <div class="stat-divider"></div>
         <div class="stat-item">
             <div class="stat-content">
                 <h3>Commissions Open</h3>
@@ -106,85 +94,57 @@
 
         <div class="content-area">
             <section id="projects" class="projects-section">
-                <!-- Section Header removed from here as it's less prominent in the side-by-side layout, or we can keep it inside -->
                 <div class="section-header-compact">
-                    <h2>Featured Projects</h2>
+                    <h2>Featured Systems</h2>
                 </div>
 
                 <div class="projects-list">
-                    <!-- Project 1 -->
+                    <!-- System 1 -->
                     <div class="project-card large">
-                        <div class="card-image"
-                            style="background-image: url('https://placehold.co/800x450/1a1a1a/FFF?text=Anime+Fishing');">
+                        <div class="card-image" style="background-image: url('IMG/BuildSystem.png');">
                         </div>
                         <div class="card-content">
                             <div class="tags">
-                                <span class="tag">Open World</span>
-                                <span class="tag">RPG</span>
+                                <span class="tag">Building</span>
+                                <span class="tag">Modular</span>
                             </div>
-                            <h3>Anime Fishing Odyssey</h3>
-                            <p>An immersive fishing RPG combining anime aesthetics with complex progression systems.
-                                Features custom water physics, dynamic eco-systems, and a massive persistent open world.
-                            </p>
-                            <a href="#" class="btn-small">View Game <i class="fa-solid fa-arrow-right"></i></a>
+                            <h3>Modular Build System</h3>
+                            <p>A flexible and intuitive building system featuring grid snapping, rotation controls, and
+                                a modular architecture. Supports dynamic prop loading, undo/redo functionality, and
+                                customizable materials.</p>
+
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
+                    <!-- System 2 -->
                     <div class="project-card large">
-                        <div class="card-image"
-                            style="background-image: url('https://placehold.co/800x450/1a1a1a/FFF?text=Ice+Cream+Tycoon');">
+                        <div class="card-image" style="background-image: url('IMG/RagdollSystem.png');">
                         </div>
                         <div class="card-content">
                             <div class="tags">
-                                <span class="tag">Tycoon</span>
-                                <span class="tag">Merge System</span>
+                                <span class="tag">Physics</span>
+                                <span class="tag">Animation</span>
                             </div>
-                            <h3>Ice Cream Tower Tycoon</h3>
-                            <p>Scalable tycoon architecture with a unique merge mechanic system. Optimized for high
-                                player counts and massive structure rendering.</p>
-                            <a href="https://www.roblox.com/games/14307704852/NEW-Ice-Cream-Merge-Tower-Tycoon"
-                                target="_blank" class="btn-small">View Game <i class="fa-solid fa-arrow-right"></i></a>
+                            <h3>Ragdoll System</h3>
+                            <p>Advanced ragdoll physics system with smooth transitions, customizable joint constraints,
+                                and recovery mechanics. Features realistic collision responses and state management.</p>
+
                         </div>
                     </div>
 
-                    <!-- Project 3 -->
+                    <!-- System 3 -->
                     <div class="project-card large">
-                        <div class="card-image"
-                            style="background-image: url('https://placehold.co/800x450/1a1a1a/FFF?text=Perris+CA');">
+                        <div class="card-image" style="background-image: url('IMG/SortorBots.png');">
                         </div>
                         <div class="card-content">
                             <div class="tags">
-                                <span class="tag">City Sim</span>
-                                <span class="tag">Roleplay</span>
+                                <span class="tag">AI</span>
+                                <span class="tag">Automation</span>
                             </div>
-                            <h3>Perris California</h3>
-                            <p>Realistic city simulation and roleplay environment with complex vehicle systems, economy
-                                integration, and property ownership.</p>
-                            <a href="https://www.roblox.com/games/13905922711/Perris-California" target="_blank"
-                                class="btn-small">View Game <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
+                            <h3>SorterBot System</h3>
+                            <p>Intelligent sorting and automation system with pathfinding AI, item classification, and
+                                efficient resource management. Optimized for large-scale operations.</p>
 
-                    <!-- Project 4 grid (2 columns for smaller items) -->
-                    <div class="projects-subgrid">
-                        <div class="project-card">
-                            <div class="card-image"
-                                style="background-image: url('https://placehold.co/600x340/1a1a1a/FFF?text=Pop+It');">
-                            </div>
-                            <div class="card-content">
-                                <div class="tags"><span class="tag">Trading</span></div>
-                                <h3>Pop it! Trading</h3>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="card-image"
-                                style="background-image: url('https://placehold.co/600x340/1a1a1a/FFF?text=Stairs+of+Rage');">
-                            </div>
-                            <div class="card-content">
-                                <div class="tags"><span class="tag">RNG</span></div>
-                                <h3>Stairs of Rage!</h3>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -282,7 +242,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 DaniDev.</p>
+            <p>&copy; 2025 Kareem.</p>
             <div class="socials">
                 <a href="#"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>

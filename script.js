@@ -45,4 +45,46 @@ document.head.insertAdjacentHTML('beforeend', `
     </style>
 `);
 
-console.log("DaniDev Portfolio Loaded");
+// Logo letter cursor interaction
+const logoLetters = document.querySelectorAll('.logo span');
+const logo = document.querySelector('.logo');
+
+if (logo && logoLetters.length > 0) {
+    logo.addEventListener('mousemove', (e) => {
+        const logoRect = logo.getBoundingClientRect();
+
+        logoLetters.forEach((letter) => {
+            const letterRect = letter.getBoundingClientRect();
+            const letterCenterX = letterRect.left + letterRect.width / 2;
+            const letterCenterY = letterRect.top + letterRect.height / 2;
+
+            // Calculate distance from cursor to letter center
+            const deltaX = e.clientX - letterCenterX;
+            const deltaY = e.clientY - letterCenterY;
+            const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+
+            // Repulsion effect - letters move away from cursor
+            const maxDistance = 100; // Maximum distance for effect
+            const strength = 20; // Strength of repulsion
+
+            if (distance < maxDistance) {
+                const force = (1 - distance / maxDistance) * strength;
+                const angle = Math.atan2(deltaY, deltaX);
+                const pushX = -Math.cos(angle) * force;
+                const pushY = -Math.sin(angle) * force;
+
+                letter.style.transform = `translate(${pushX}px, ${pushY}px) rotate(${pushX * 0.5}deg)`;
+            } else {
+                letter.style.transform = '';
+            }
+        });
+    });
+
+    logo.addEventListener('mouseleave', () => {
+        logoLetters.forEach((letter) => {
+            letter.style.transform = '';
+        });
+    });
+}
+
+console.log("Kareem Portfolio Loaded");
