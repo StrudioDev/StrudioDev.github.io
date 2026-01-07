@@ -3,24 +3,24 @@ import { ExternalLink } from 'lucide-react';
 
 const projects = [
     {
-        title: "Anime Fishing Odyssey",
-        category: "Simulator • RPG",
-        image: "https://placehold.co/600x400/1e1e1e/FFF?text=Anime+Fishing", // Placeholder, user can replace later
-        description: "A high-fidelity fishing simulator with RPG elements, custom physics, and expansive worlds.",
+        title: "Mining System",
+        category: "System",
+        image: "MiningSys.png", // Placeholder, user can replace later
+        description: "A high-fidelity mining system with the same Mining style as The Forge.",
         link: "#"
     },
     {
-        title: "Cyber Defense Tycoon",
-        category: "Tycoon • Strategy",
-        image: "https://placehold.co/600x400/1e1e1e/FFF?text=Cyber+Defense",
-        description: "Build your base, defend against waves of enemies, and upgrade your arsenal in this cyberpunk themed tycoon.",
+        title: "FPS System",
+        category: "System",
+        image: "FPS.png",
+        description: "A high-fidelity FPS system with OOP based architecture, and a lot of features.",
         link: "#"
     },
     {
-        title: "Vibe Station",
-        category: "Social • Chill",
-        image: "https://placehold.co/600x400/1e1e1e/FFF?text=Vibe+Station",
-        description: "A relaxing social hangout featuring synchronized music, spatial voice, and interactive environments.",
+        title: "Build System",
+        category: "System",
+        image: "BuildSys.png",
+        description: "A high-fidelity build system with a polished and animated placement system, and an animated GUI.",
         link: "#"
     }
 ];
